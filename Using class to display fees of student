@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+
+
+class student
+{
+	string rollno;
+	string name;
+	float fee;
+	public:
+
+
+student()
+{
+ 		cout<<"Enter name:"<<endl;
+ 		cin>>name;
+ 		cout<<"Enter roll no.:"<<endl;
+ 		cin>>rollno;
+ 		cout<<"Enter their fee: "<<endl;
+ 		cin>>fee;
+ }
+
+ void display()
+{
+	cout<<"Name: "<<name<<"\nRoll No.: "<<rollno<<"\nFees: "<<fee<<endl;
+}
+
+};
+
+ int main()
+{
+ 	
+ 	
+ 	student s;
+ 	s.display(); 	
+ 	return 0;
+ 	
+ 	
+ 
+}
