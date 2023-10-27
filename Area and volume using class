@@ -1,0 +1,55 @@
+#include<iostream>
+using namespace std;
+
+
+//By default everything is private in class
+
+
+class Cube
+{
+		float l=9;
+		float b=0.9;
+		float h= 9.09;
+		float r = 9.9;
+	public:
+	float triangle()
+	{
+		float area = (0.5)*b*h;
+		cout<<"Area of triangle is: "<<area<<endl<<endl;
+
+	}
+	float square()
+	{
+		float area = b*b;
+		cout<<"Area of square is: "<<area<<endl;
+		float volume = b*b*b;
+		cout<<"Volume of cube is: "<<volume<<endl<<endl;
+
+	}
+	float rectangle()
+	{
+		float area = l*b;
+		cout<<"Area of rectangle is: "<<area<<endl;
+		float volume = l*b*h;
+		cout<<"Volume of cuboid is: "<<volume<<endl<<endl;
+	}
+	float circle()
+	{
+		float area = (3.14)*r*r;
+		cout<<"Area of circle is: "<<area<<endl;
+		float circ = (3.14)*2*r;
+		cout<<"Circumference of circle is: "<<circ<<endl<<endl;
+	}
+
+
+};
+
+ main()
+{
+	Cube cube1;
+	cube1.triangle();
+	cube1.rectangle();
+	cube1.square();
+	cube1.circle();
+//	cout<<"Volume is: "<<vol;
+}
